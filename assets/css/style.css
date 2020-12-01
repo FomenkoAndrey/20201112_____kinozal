@@ -45,17 +45,18 @@
   background-color: #ebebeb;
 }
 
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.panel-title,
 .panel-info > .panel-heading {
   letter-spacing: 0.1em;
   color: #ffffff;
   border: none;
   background-color: #df8a13;
   font-size: 1.2rem;
-}
-
-.panel-body {
-  border: 1px solid #dddddd;
-  border-radius: 0 0 4px 4px;
 }
 
 .input-lg,
@@ -86,16 +87,17 @@ h2 {
   font-family: "PT Serif", serif;
 }
 
-h3 {
-  font-family: "PT Serif", serif;
-}
-
 a {
   color: #165690;
 }
 
 a:hover, a:focus {
   text-decoration: none;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
 
 .header-logo {
@@ -119,6 +121,42 @@ a:hover, a:focus {
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+.new-films-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+
+.new-films-item__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -260,6 +298,14 @@ a:hover, a:focus {
 }
 
 @media (min-width: 576px) {
+  h1 {
+    margin: -7.5px 0 45px;
+    font-size: 3rem;
+  }
+  h2 {
+    margin: 60px 0 45px;
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     margin-right: -15px;
     letter-spacing: 0.33em;
@@ -292,6 +338,14 @@ a:hover, a:focus {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
+  h2 {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
   .header-logo__title {
     margin-right: -7.5px;
     letter-spacing: 0.2em;

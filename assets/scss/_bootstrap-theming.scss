@@ -70,21 +70,21 @@
 
   border: none;
   background-color: darken($color-light, 8%);
-}
 
-.panel-info > .panel-heading {
-  letter-spacing: 0.1em;
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+  &-title,
+  &-info > .panel-heading {
+    letter-spacing: 0.1em;
 
-  color: $color-light;
-  border: none;
-  background-color: $color-accent;
+    color: $color-light;
+    border: none;
+    background-color: $color-accent;
 
-  font-size: 1.2rem;
-}
-
-.panel-body {
-  border: 1px solid $color-gray;
-  border-radius: 0 0 4px 4px;
+    font-size: 1.2rem;
+  }
 }
 
 .input {
