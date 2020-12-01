@@ -88,3 +88,47 @@
     }
   }
 }
+
+.top-films {
+  &__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__list {
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-right: -1px;
+    margin-left: -1px;
+    background-color: transparent;
+    padding-right: 55px;
+
+    &:first-child {
+      border-top: none;
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-radius: 0;
+      border-bottom: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent !important;
+      border-color: $color-accent;
+      color: $color-light !important;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    right: $gap;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
